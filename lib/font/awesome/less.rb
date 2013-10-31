@@ -1,9 +1,8 @@
-require "font/awesome/less/version"
-
 module Font
   module Awesome
     module Less
-      # Your code goes here...
+      require 'font/awesome/less/engine'
+      require 'font/awesome/less/version'
     end
   end
 end

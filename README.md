@@ -1,6 +1,6 @@
 # Font::Awesome::Less
 
-TODO: Write a gem description
+Font-Awesome LESS gem for use in Ruby on Rails projects
 
 ## Installation
 
@@ -16,14 +16,6 @@ Or install it yourself as:
 
     $ gem install font-awesome-less
 
-## Usage
+If you use Rails/Sprockets, add this to e.g. application.css.scss:
 
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    *= require font-awesome

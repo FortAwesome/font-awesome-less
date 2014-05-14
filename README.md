@@ -1,6 +1,6 @@
 # Font::Awesome::Less
 
-Font-Awesome LESS gem for use in Ruby projects
+Font-Awesome LESS gem for use in Rails projects
 
 ## Installation
 
@@ -16,7 +16,7 @@ Or install it yourself as:
 
     $ gem install font-awesome-less
 
-If you use Rails/Sprockets, add this to e.g. application.css.scss:
+If you use Rails add this to e.g. application.css.scss:
 
     *= require font-awesome
 

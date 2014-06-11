@@ -16,9 +16,9 @@ Or install it yourself as:
 
     $ gem install font-awesome-less
 
-If you use Rails add this to e.g. application.css.scss:
+If you use Rails add this to e.g. application.css.less:
 
-    *= require font-awesome
+    @import "font-awesome";
 
 ## Upgrading from 3.*
 

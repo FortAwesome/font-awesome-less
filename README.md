@@ -1,52 +1,92 @@
-# Font::Awesome::Less
+# FontAwesome::Less
 
-Font-Awesome LESS gem for use in Rails projects
-
+'font-awesome-less' is a Less-powered version of FontAwesome for your Ruby projects and plays nicely with 
+ Ruby on Rails, Sprockets, etc.
+ 
+ 
 ## Installation
 
-Add this line to your application's Gemfile:
+Please see the appropriate guide for your environment of choice:
 
-    gem 'font-awesome-less'
+* [Ruby on Rails](#a-ruby-on-rails).
+* [Regular](#b-compass-without-rails) not on Rails.
+
+
+### a. Ruby on Rails
+
+In your Gemfile include:
+
+```ruby
+gem 'font-awesome-less', '~> 4.2.0'
+```
 
 And then execute:
 
-    $ bundle
+```sh
+bundle install
+```
 
-Or install it yourself as:
+Import the FontAwesome styles in your `app/assets/stylesheets/application.css.less`. The `font-awesome-sprockets` file
+includes the overrides for Rails helpers.
 
-    $ gem install font-awesome-less
+```scss
+@import "font-awesome-sprockets";
+@import "font-awesome";
+```
 
-If you use Rails add this to e.g. application.css.scss:
-
-    *= require font-awesome
-
-## Upgrading from 3.*
-
-Prepend the `fa` class to existing icons:
-
-    3.* Syntax
-    <i class="icon-github"></i>
-
-    4.* Syntax
-    <i class="fa fa-github"></i>
-
-## Rails Helper usage
+#### Rails Helper usage
 
 In your view:
 
-  ```ruby
-  icon('flag')
-  # => <i class="fa fa-flag"></i>
-  ```
+```ruby
+icon('flag')
+# => <i class="fa fa-flag"></i>
+```
 
-  ```ruby
-  icon('flag', '', class: 'strong')
-  # => <i class="fa fa-flag strong"></i>
-  ```
+```ruby
+icon('flag', '', class: 'strong')
+# => <i class="fa fa-flag strong"></i>
+```
 
-  ```ruby
-  icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
-  # => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
-  ```
+```ruby
+icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
+# => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
+```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
+
+### b. Regular without Rails
+
+Install the gem
+
+```sh
+gem install bootstrap-less
+```
+
+If you have an existing Ruby project:
+
+```ruby
+require 'bootstrap-less'
+```
+
+Import the FontAwesome styles
+
+```scss
+@import "font-awesome-regular";
+@import "font-awesome";
+
+## Upgrading from FontAwesome::Less 3.x
+
+Prepend the `fa` class to existing icons:
+
+3.x Syntax
+
+```html
+<i class="icon-github"></i>
+```
+
+4.x Syntax
+
+```html
+<i class="fa fa-github"></i>
+```

@@ -74,6 +74,7 @@ Import the FontAwesome styles
 ```scss
 @import "font-awesome-regular";
 @import "font-awesome";
+```
 
 ## Upgrading from FontAwesome::Less 3.x
 

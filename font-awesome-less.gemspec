@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'less-rails'
 
-  spec.add_runtime_dependency 'less', '~> 2.4.0'
+  spec.add_runtime_dependency 'less', '>= 2.4.0'
 end

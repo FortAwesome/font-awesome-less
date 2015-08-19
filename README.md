@@ -1,9 +1,9 @@
 # FontAwesome::Less
 
-'font-awesome-less' is a Less-powered version of FontAwesome for your Ruby projects and plays nicely with 
+'font-awesome-less' is a Less-powered version of FontAwesome for your Ruby projects and plays nicely with
  Ruby on Rails, Sprockets, etc.
- 
- 
+
+
 ## Installation
 
 Please see the appropriate guide for your environment of choice:
@@ -17,7 +17,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-less', '~> 4.2.0'
+gem 'font-awesome-less', '~> 4.4.0'
 ```
 
 And then execute:

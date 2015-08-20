@@ -7,7 +7,7 @@ module FontAwesome
             app.config.assets.paths << root.join('assets', sub)
           end
 
-          app.config.assets.precompile << %r(font-awesome/fontawesome-webfont\.(?:eot|svg|ttf|woff)$)
+          app.config.assets.precompile << %r(font-awesome/fontawesome-webfont\.(?:eot|svg|ttf|woff|woff2)$)
         end
       end
     end

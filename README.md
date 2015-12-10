@@ -1,5 +1,7 @@
 # FontAwesome::Less
 
+[![Gem Version](https://badge.fury.io/rb/font-awesome-less.svg)](https://badge.fury.io/rb/font-awesome-less)
+
 'font-awesome-less' is a Less-powered version of FontAwesome for your Ruby projects and plays nicely with 
  Ruby on Rails, Sprockets, etc.
  
@@ -17,7 +19,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-less', '~> 4.2.0'
+gem 'font-awesome-less', '~> 4.5.0'
 ```
 
 And then execute:
@@ -29,7 +31,7 @@ bundle install
 Import the FontAwesome styles in your `app/assets/stylesheets/application.css.less`. The `font-awesome-sprockets` file
 includes the overrides for Rails helpers.
 
-```scss
+```less
 @import "font-awesome-sprockets";
 @import "font-awesome";
 ```
@@ -60,18 +62,18 @@ Note: the icon helper can take a hash of options that will be passed to the cont
 Install the gem
 
 ```sh
-gem install bootstrap-less
+gem install font-awesome-less
 ```
 
 If you have an existing Ruby project:
 
 ```ruby
-require 'bootstrap-less'
+require 'font-awesome-less'
 ```
 
 Import the FontAwesome styles
 
-```scss
+```less
 @import "font-awesome-regular";
 @import "font-awesome";
 ```

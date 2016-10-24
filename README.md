@@ -19,7 +19,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-less', '~> 4.6.2'
+gem 'font-awesome-less', '~> 4.7.0'
 ```
 
 And then execute:
